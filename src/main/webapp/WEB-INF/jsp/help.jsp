@@ -19,6 +19,10 @@
 --%>
 <%@ include file="/WEB-INF/jsp/include.jsp"%>
 
+<portlet:renderURL var="editURL" portletMode="edit">  
+ 
+</portlet:renderURL> 
+
 <div class="portlet-title">
   <h3>
     <spring:message code="help.title"/>
@@ -29,7 +33,7 @@
 
   <div class="portlet-section-body">
     <p>
-     <spring:message code="help.description"/>
+        You can modify the user that you want to follow with the <a href="${editURL}"><b>EDIT</b></a> mode.
     </p>
   </div>
 
